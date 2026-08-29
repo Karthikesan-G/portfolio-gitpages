@@ -94,8 +94,8 @@
         company:  "Nuware Systems LLP",
         client:   "Client: Alliance Bernstein",
         role:     "Software Engineer",
-        date:     "Aug 2025 — Present",
-        date_val: "08/09/2025 — Present",
+        date:     "Sep 2025 — Aug 2026",
+        date_val: "08/09/2025 — 28/08/2026",
         location: "Bengaluru · Hybrid",
         bullets: [
           "Migrated legacy <b>Perl batch systems</b> to Python + Apache Airflow, improving scalability and maintainability.",
@@ -222,7 +222,8 @@
     });
     return parseFloat((ms/(1000*60*60*24*365.25)).toFixed(1));
   }
-  CONFIG.stats[0].number = calcYears(CONFIG.experience);
+  const TOTAL_EXPERIENCE = calcYears(CONFIG.experience);
+  CONFIG.stats[0].number = TOTAL_EXPERIENCE;
   </script>
 
   <style>
@@ -596,7 +597,7 @@
   <div class="s-head reveal"><span class="s-num">01</span><h2 class="t-head s-title">About</h2><div class="s-rule"></div></div>
   <div class="about-grid">
     <div>
-      <p class="t-body reveal">I'm a Software Engineer with 3.7 years of experience designing robust ETL pipelines, automating large-scale data workflows, and migrating legacy systems to modern cloud infrastructure.</p>
+      <p class="t-body reveal" id="aboutExperience"></p>
       <p class="t-body reveal">Currently at Nuware Systems, supporting Alliance Bernstein's critical data operations — re-engineering Perl batch systems into Python and Airflow-based pipelines that run 40% faster and scale without friction.</p>
       <p class="t-body reveal">I care about clean architecture, reliable delivery, and data you can actually trust.</p>
       <div class="a-links reveal" id="aLinks"></div>
@@ -1197,6 +1198,9 @@ document.getElementById('heroStack').innerHTML = CONFIG.stack.map(s=>`<span clas
 })();
 
 /* ── ABOUT ── */
+document.getElementById('aboutExperience').textContent =
+`I'm a Software Engineer with ${TOTAL_EXPERIENCE} years of experience designing robust ETL pipelines, automating large-scale data workflows, and migrating legacy systems to modern cloud infrastructure.`;
+
 document.getElementById('aLinks').innerHTML=`
   <a href="${CONFIG.linkedin}" target="_blank" class="a-link"><span>LinkedIn</span><span>↗</span></a>
   <a href="${CONFIG.github}"   target="_blank" class="a-link"><span>GitHub</span><span>↗</span></a>
