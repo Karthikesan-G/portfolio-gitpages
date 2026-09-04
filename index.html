@@ -27,7 +27,7 @@
       "Pipeline Architect",
     ],
 
-    stack: ["Python","Perl","SQL","Apache Airflow","PySpark","AWS","Snowflake","Docker"],
+    stack: ["Python","Perl","SQL","Apache Airflow","PySpark","Docker","Kubernetes","Snowflake"],
 
     linkedin: "https://linkedin.com/in/karthikesan-g/",
     github:   "https://github.com/Karthikesan-G",
@@ -91,6 +91,19 @@
 
     experience: [
       {
+        company:  "{Company Name}",
+        role:     "{Designation}",
+        date:     "Sep 2026 — Present",
+        date_val: "02/09/2026 — Present",
+        location: "Chennai · Remote",
+        bullets: [
+          
+        ],
+        milestones: [
+          // { year:"2026", label:"Joined Merit",        type:"join" },
+        ]
+      },
+      {
         company:  "Nuware Systems LLP",
         client:   "Client: Alliance Bernstein",
         role:     "Software Engineer",
@@ -98,10 +111,11 @@
         date_val: "08/09/2025 — 28/08/2026",
         location: "Bengaluru · Hybrid",
         bullets: [
-          "Migrated legacy <b>Perl batch systems</b> to Python + Apache Airflow, improving scalability and maintainability.",
-          "Re-engineered critical PCS jobs, <b>cutting execution time by 40%</b> while maintaining functional parity.",
-          "Containerized workloads with <b>Docker</b>, integrated into CI/CD pipelines for seamless deployment.",
-          "Implemented robust logging, alerting, and failure recovery for production-grade reliability.",
+          "Migrated <b>50K+ legacy Perl jobs</b> to Python-based <b>Apache Airflow DAGs</b>, modernising job orchestration and dependencies.",
+          "Deployed and scaled <b>Airflow on Kubernetes (AKS)</b> using <b>Helm</b> across development and production environments.",
+          "Built <b>CI/CD workflows</b> to automate deployments and manage version-controlled DAGs and platform configurations.",
+          "Configured and optimised Airflow for <b>large-scale production workloads</b>, with monitoring, secrets, and reliability controls.",
+          "Troubleshot <b>production failures</b> across Airflow and Kubernetes, resolving DAG, pod, and deployment issues."
         ],
         milestones: [
           { year:"2025", label:"Joined Nuware",        type:"join" },
@@ -598,7 +612,7 @@
   <div class="about-grid">
     <div>
       <p class="t-body reveal" id="aboutExperience"></p>
-      <p class="t-body reveal">Currently at Nuware Systems, supporting Alliance Bernstein's critical data operations — re-engineering Perl batch systems into Python and Airflow-based pipelines that run 40% faster and scale without friction.</p>
+      <!-- <p class="t-body reveal">Currently at Nuware Systems, supporting Alliance Bernstein's critical data operations — re-engineering Perl batch systems into Python and Airflow-based pipelines that run 40% faster and scale without friction.</p> -->
       <p class="t-body reveal">I care about clean architecture, reliable delivery, and data you can actually trust.</p>
       <div class="a-links reveal" id="aLinks"></div>
     </div>
